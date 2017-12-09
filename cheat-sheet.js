@@ -1,1 +1,0 @@
-// This is WIP, just a couple of notes for ES6 and stuff
