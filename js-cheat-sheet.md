@@ -84,10 +84,18 @@ var dynProp = {
 };
 ```
 
+## Maps
+Usage of a JS Hashmap
+```JS
+let m = new Map();
+m.set("Hell", "World");
+console.log(m.get("Hell"));
+```
+
 ## Classes
 
 ## Class Sample
-```
+```JS
 class CheatSheet{
 	constructor(lang, text){
 		this.lang = lang;
@@ -105,3 +113,6 @@ class PetersCheatSheet extends CheatSheet{
 var myCS = new PetersCheatSheet("Golang", "Here will be some text for Go");
 myCS.print();
 ```
+
+## Promises
+WIP
