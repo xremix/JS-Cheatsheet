@@ -43,11 +43,31 @@ Warm Regards`;
 ## Shorthand Properties
 Set an object without having to define property names
 
-```
+```JS
 var a = 'Hello';
 var b = 'World';
 // ES6 can
 var c = {a,b};
 // Instead of
 var c = {a: a, b: b};
+```
+
+Another sample of function in an object
+```JS
+var funcinator = {
+	stateOfTheArt(instead, of){
+
+	},
+	theOldWay: function(you, know){
+
+	}
+};
+```
+Dynamic Generated Property Names
+```JS
+var propertyNameSuffix = "test";
+var dynProp = {
+	["my-new" + propertyNameSuffix](){
+	}
+};
 ```
