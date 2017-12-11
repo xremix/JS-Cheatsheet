@@ -12,3 +12,15 @@ var x; // Good old vars
 const x; // Can not be changed
 let x; // Block scoped, not accessible before assigning, can't get redeclaed in scope
 ```
+
+## Arrow Functions
+
+```
+// ES6
+var eq = (para, parb) => para == parb;
+
+// Old Vanilla JS
+var eq = function(para, parb){
+	return para == parb;
+}
+```
