@@ -52,6 +52,17 @@ var c = {a,b};
 var c = {a: a, b: b};
 ```
 
+So we can also...
+```JS
+let f = () => {
+  var a = 1;
+  var b = 2;
+  return {a, b};
+};
+
+var {a,b} = f();
+```
+
 Another sample of function in an object
 ```JS
 var funcinator = {
@@ -67,7 +78,7 @@ Dynamic Generated Property Names
 ```JS
 var propertyNameSuffix = "test";
 var dynProp = {
-	["my-new" + propertyNameSuffix](){
+		["my-new" + propertyNameSuffix](){
 	}
 };
 ```
