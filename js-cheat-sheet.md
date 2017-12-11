@@ -1,5 +1,10 @@
 # JS Cheat Sheet
-*This is WIP, just a couple of notes for ES6 and stuff*
+*WIP*
+Summary of a couple of interesting code snippets arround JS, ES6, etc.
+
+*ES5* standardized in 2009
+*ES6 / ECMAScript 2015* standardized in 2015. Most modern browsers support it [http://es6-features.org/#Constants](See feature)
+*ECMAScript 2016* is a smaller release. `Array.prorotype.includes` will obsolete the currently used Àrray.prototype.contains` and exponent operator (2^3 == `2 ** 3`)
 
 ## Basics
 
