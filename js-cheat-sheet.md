@@ -15,7 +15,7 @@ let x; // Block scoped, not accessible before assigning, can't get redeclaed in 
 
 ## Arrow Functions
 
-```
+```JS
 // ES6
 var eq = (para, parb) => para == parb;
 
@@ -23,4 +23,19 @@ var eq = (para, parb) => para == parb;
 var eq = function(para, parb){
 	return para == parb;
 }
+```
+
+## Default Parameter
+```JS
+function f (x, y = 7, z = 42) {
+    return x + y + z
+}
+```
+
+## String Interpolation
+```JS
+const name = "Peter";
+var helloMessage = `Hello ${name},
+I hope you are doing good?
+Warm Regards`;
 ```
