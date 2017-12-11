@@ -11,12 +11,11 @@ Summary of a couple of interesting code snippets arround JS, ES6, etc.
 ### Resources
 - [ES6 Features](http://es6-features.org/#Constants)
 - [New Features in ES8 and ES9](https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66)
+- https://github.com/mbeaudru/modern-js-cheatsheet
+- https://github.com/DrkSephy/es6-cheatsheet
+
 
 ## Basics
-
-### Other References
-https://github.com/mbeaudru/modern-js-cheatsheet
-https://github.com/DrkSephy/es6-cheatsheet
 
 ### Let vs. Var vs. Const
 ```JS
@@ -126,4 +125,21 @@ myCS.print();
 ```
 
 ## Promises
-WIP
+ES6 Promise pattern, so there is no need anymore to use [q](https://github.com/kriskowal/q), but be aware of [no IE11 support](https://caniuse.com/#feat=promises)
+```JS
+function logAsync(text) {
+    return new Promise(
+        function (resolve, reject) {
+
+            setTimeout(function(){
+              console.log(text)
+              resolve();              
+            }, 100);
+            //reject("error");
+        });
+}
+
+logAsync("Log me async")
+.then(result => { console.log("Here we go")})
+.catch(error => { console.log("Something didn't work") });
+```
