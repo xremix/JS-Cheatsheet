@@ -39,3 +39,15 @@ var helloMessage = `Hello ${name},
 I hope you are doing good?
 Warm Regards`;
 ```
+
+## Shorthand Properties
+Set an object without having to define property names
+
+```
+var a = 'Hello';
+var b = 'World';
+// ES6 can
+var c = {a,b};
+// Instead of
+var c = {a: a, b: b};
+```
