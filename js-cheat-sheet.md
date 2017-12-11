@@ -36,6 +36,16 @@ var eq = function(para, parb){
 }
 ```
 
+### Blocks
+To replace immediatly invoked funcitons
+```JS
+{
+	let internal = "";
+};
+console.log(internal); // Will crash
+```
+
+
 ### Default Parameter
 ```JS
 function f (x, y = 7, z = 42) {
