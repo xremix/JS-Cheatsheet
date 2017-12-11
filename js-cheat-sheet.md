@@ -1,19 +1,20 @@
 # JS Cheat Sheet
 *This is WIP, just a couple of notes for ES6 and stuff*
 
+## Basics
 
-## Other References
+### Other References
 https://github.com/mbeaudru/modern-js-cheatsheet
 https://github.com/DrkSephy/es6-cheatsheet
 
-## Let vs. Var vs. Const
+### Let vs. Var vs. Const
 ```JS
 var x; // Good old vars
 const x; // Can not be changed
 let x; // Block scoped, not accessible before assigning, can't get redeclaed in scope
 ```
 
-## Arrow Functions
+### Arrow Functions
 
 ```JS
 // ES6
@@ -25,14 +26,14 @@ var eq = function(para, parb){
 }
 ```
 
-## Default Parameter
+### Default Parameter
 ```JS
 function f (x, y = 7, z = 42) {
     return x + y + z
 }
 ```
 
-## String Interpolation
+### String Interpolation
 ```JS
 const name = "Peter";
 var helloMessage = `Hello ${name},
@@ -40,7 +41,7 @@ I hope you are doing good?
 Warm Regards`;
 ```
 
-## Shorthand Properties
+### Shorthand Properties
 Set an object without having to define property names
 
 ```JS
@@ -81,4 +82,26 @@ var dynProp = {
 		["my-new" + propertyNameSuffix](){
 	}
 };
+```
+
+## Classes
+
+## Class Sample
+```
+class CheatSheet{
+	constructor(lang, text){
+		this.lang = lang;
+		this.text = text;
+	}
+	print(){
+		console.log(`# ${this.lang}
+			${this.text}`);
+	}
+}
+
+class PetersCheatSheet extends CheatSheet{
+
+}
+var myCS = new PetersCheatSheet("Golang", "Here will be some text for Go");
+myCS.print();
 ```
