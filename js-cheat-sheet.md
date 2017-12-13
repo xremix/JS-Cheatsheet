@@ -1,5 +1,15 @@
 # JS Cheat Sheet
 *WIP*
+## Overview
+- [Misc](#Misc)
+- [Basics](#Basics)
+- [Maps](#Maps)
+- [Classes](#Classes)
+- [Promises](#Promises)
+
+## Misc
+
+### JavaScript Versions
 Summary of a couple of interesting code snippets arround JS, ES6, etc.
 
 - **ES5** standardized in 2009, widely supported.
