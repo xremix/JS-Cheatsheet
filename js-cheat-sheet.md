@@ -14,7 +14,7 @@ Summary of a couple of interesting code snippets arround JS, ES6, etc.
 
 - **ES5** standardized in 2009, widely supported.
 - **ES6 / ECMAScript 2015** standardized in 2015. Most modern browsers support it
-- **ES7 / ECMAScript 2016** is a smaller release from 2016. `Array.prorotype.includes` will obsolete the currently used `Array.prototype.contains` and exponent operator (2^3 == `2 ** 3`)
+- **ES7 / ECMAScript 2016** is a smaller release from 2016. `Array.prototype.includes` will obsolete the old function `Array.prototype.contains`. There is also a new exponent operator (2^3 == `2 ** 3`)
 - **ES8 / ECMAScript 2017** includes features like String Padding, `Object.values` and `Object.entries`, **Async functions**, Trailing Commas**,**
 - **ES9** will mostly lift template literal restrictions
 
