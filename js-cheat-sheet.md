@@ -1,11 +1,11 @@
 # JS Cheat Sheet
 *WIP*
 ## Overview
-- [Misc](#Misc)
-- [Basics](#Basics)
-- [Maps](#Maps)
-- [Classes](#Classes)
-- [Promises](#Promises)
+- [Misc](#misc)
+- [Basics](#basics)
+- [Maps](#maps)
+- [Classes](#classes)
+- [Promises](#promises)
 
 ## Misc
 
