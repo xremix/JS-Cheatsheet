@@ -1,5 +1,6 @@
 # JS Cheat Sheet
-*WIP*
+Summary of a couple of interesting code snippets arround JS, ES6, etc.
+
 ## Overview
 - [Misc](#misc)
 - [Basics](#basics)
@@ -10,7 +11,6 @@
 ## Misc
 
 ### JavaScript Versions
-Summary of a couple of interesting code snippets arround JS, ES6, etc.
 
 - **ES5** standardized in 2009, widely supported.
 - **ES6 / ECMAScript 2015** standardized in 2015. Most modern browsers support it
