@@ -32,7 +32,7 @@ Summary of a couple of interesting code snippets arround JS, ES6, etc.
 ```JS
 var x; // Good old vars
 const x; // Can not be changed
-let x; // Block scoped, not accessible before assigning, can't get redeclaed in scope
+let x; // Block scoped, not accessible before assigning, can't get redeclared in scope
 ```
 
 ### Arrow Functions
