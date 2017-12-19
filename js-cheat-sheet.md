@@ -27,6 +27,7 @@ References, useful and interesting links.
 - https://github.com/DrkSephy/es6-cheatsheet
 - [30 Seconds of Code (Github)](https://github.com/Chalarangelo/30-seconds-of-code)
 - [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources)
+- [You Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
 
 ## Basics
 
