@@ -19,12 +19,14 @@ Summary of a couple of interesting code snippets arround JS, ES6, etc.
 - **ES9** will mostly lift template literal restrictions
 
 ### Resources
+References, useful and interesting links.
+
 - [ES6 Features](http://es6-features.org/#Constants)
 - [New Features in ES8 and ES9](https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66)
 - https://github.com/mbeaudru/modern-js-cheatsheet
 - https://github.com/DrkSephy/es6-cheatsheet
 - [30 Seconds of Code (Github)](https://github.com/Chalarangelo/30-seconds-of-code)
-
+- [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources)
 
 ## Basics
 
