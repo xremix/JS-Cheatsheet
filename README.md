@@ -180,6 +180,8 @@ import * as foobar from 'foobar';
 foobar.bar();
 ```
 
+To Include a ES6 Module in your HTML-File use `<script src="index.js" type="module"></script>`
+
 ## Classes
 
 ## Class Sample
