@@ -1,5 +1,5 @@
 # JS Cheat Sheet
-Summary of a couple of interesting code snippets arround JS, ES6, etc.
+Summary of code snippets arround JS, ES6, etc., as well as a couple of interesting resource links.
 
 ## Overview
 - [Misc](#misc)
