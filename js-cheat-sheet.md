@@ -81,9 +81,9 @@ Set an object without having to define property names
 ```JS
 var a = 'Hello';
 var b = 'World';
-// ES6 can
+// ES6 can do
 var c = {a,b};
-// Instead of
+// which gets the same result as
 var c = {a: a, b: b};
 ```
 
