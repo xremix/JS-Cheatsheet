@@ -3,7 +3,7 @@ Summary of code snippets arround JS, ES6, etc., as well as a couple of interesti
 
 ## Overview
 - [Misc](#misc)
-- [Basics](#basics)
+- [ES6 Basics](#es6basics)
 - [Maps](#maps)
 - [Classes](#classes)
 - [Promises](#promises)
@@ -29,7 +29,7 @@ References, useful and interesting links.
 - [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources)
 - [You Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
 
-## Basics
+## ES6 Basics
 
 ### Let vs. Var vs. Const
 ```JS
