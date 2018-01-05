@@ -28,6 +28,7 @@ References, useful and interesting links.
 - [30 Seconds of Code (Github)](https://github.com/Chalarangelo/30-seconds-of-code)
 - [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources)
 - [You Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
+- [Babel Online Transpiler](https://babeljs.io/repl/)
 
 ## ES6 Basics
 
