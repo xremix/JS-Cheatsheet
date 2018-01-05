@@ -3,7 +3,7 @@ Summary of code snippets arround JS, ES6, etc., as well as a couple of interesti
 
 ## Overview
 - [Misc](#misc)
-- [ES6 Basics](#es6basics)
+- [ES6 Basics](#es6-basics)
 - [Maps](#maps)
 - [Classes](#classes)
 - [Promises](#promises)
