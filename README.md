@@ -1,10 +1,11 @@
 # JS Cheat Sheet
-Summary of code snippets arround JS, ES6, etc., as well as a couple of interesting resource links.
+Summary of code snippets arround modern JS, ES6, etc., as well as a couple of interesting resource links.
 
 ## Overview
 - [Misc](#misc)
 - [ES6 Basics](#es6-basics)
 - [Maps](#maps)
+- [Modules](#modules)
 - [Classes](#classes)
 - [Promises](#promises)
 
@@ -126,6 +127,31 @@ let m = new Map();
 m.set("Hell", "World");
 console.log(m.get("Hell"));
 ```
+
+## Modules
+
+## CommonJS Modules
+CommonJS Modules are supported in Node.JS by default, but can also be used by using RequireJS, Browserify or [other Tools](https://web.archive.org/web/20120826205255/http://blog.brianbeck.com/post/10667967423/node-js-require-in-the-browser)
+
+```JS
+// foobar.js
+function foobar(){
+        this.bar = function(){
+                console.log('Hello bar');
+        }
+}
+// Expose variables / public variables
+exports.foobar = foobar;
+```
+```JS
+//main.js
+var foobar = require('./foobar').foobar,
+    myfoobar   = new foobar();
+ 
+myfoobar.bar(); // 'Hello bar'
+```
+
+##ES6 Modules
 
 ## Classes
 
