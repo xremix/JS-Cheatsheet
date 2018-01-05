@@ -130,7 +130,7 @@ console.log(m.get("Hell"));
 
 ## Modules
 
-## CommonJS Modules
+### CommonJS Modules
 CommonJS Modules are supported in Node.JS by default, but can also be used by using RequireJS, Browserify or [other Tools](https://web.archive.org/web/20120826205255/http://blog.brianbeck.com/post/10667967423/node-js-require-in-the-browser)
 
 ```JS
@@ -151,7 +151,34 @@ var foobar = require('./foobar').foobar,
 myfoobar.bar(); // 'Hello bar'
 ```
 
-##ES6 Modules
+### ES6 Modules
+Was designed with influence of CommonJS and AMD modules.
+```JS
+// foobar.js
+export foobar = {
+	this.bar = function(){
+		console.log('Hello bar');
+	}
+}
+```
+```JS
+// main.js
+import {foobar} from 'foobar';
+foobar.bar();
+```
+
+Or as an alternative you could also 
+```JS
+// foobar.js
+export bar = function(){
+	console.log('Hello bar');
+}
+```
+```JS
+// main.js
+import * as foobar from 'foobar';
+foobar.bar();
+```
 
 ## Classes
 
