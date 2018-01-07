@@ -36,6 +36,19 @@ References, useful and interesting links.
 ### Introduction
 To make sure your audience can use the code you still might want to use [Babel](https://babeljs.io) to transpile your modern JS.
 
+### Use Strict
+Was part of ES5, to tell the browser to run in `strict mode`.
+It is always block scoped. Declared of the beginning of a file it has a global scope. But it always needs to be declared at the beginning of a block / function / file.
+
+- Helps to write *secure* JS
+- Prevents bad Syntax
+- You cannot use undeclared variables in strict mode for example.
+
+```javascript
+'use strict';
+...
+```
+
 ### Let vs. Var vs. Const
 ```javascript
 var x; // Good old vars
