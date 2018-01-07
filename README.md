@@ -24,8 +24,8 @@ References, useful and interesting links.
 
 - [ES6 Features](http://es6-features.org/#Constants)
 - [New Features in ES8 and ES9](https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66)
-- https://github.com/mbeaudru/modern-js-cheatsheet
-- https://github.com/DrkSephy/es6-cheatsheet
+- [Modern JS Cheatshett by mbeaudru](https://github.com/mbeaudru/modern-js-cheatsheet)
+- [ES6 Cheatsheet by DrkSephy](https://github.com/DrkSephy/es6-cheatsheet)
 - [30 Seconds of Code (Github)](https://github.com/Chalarangelo/30-seconds-of-code)
 - [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources)
 - [You Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
@@ -34,7 +34,7 @@ References, useful and interesting links.
 ## ES6 Basics
 
 ### Let vs. Var vs. Const
-```JS
+```javascript
 var x; // Good old vars
 const x; // Can not be changed
 let x; // Block scoped, not accessible before assigning, can't get redeclared in scope
@@ -42,7 +42,7 @@ let x; // Block scoped, not accessible before assigning, can't get redeclared in
 
 ### Arrow Functions
 
-```JS
+```javascript
 // ES6
 var eq = (para, parb) => para == parb;
 
@@ -54,7 +54,7 @@ var eq = function(para, parb){
 
 ### Blocks
 To replace immediatly invoked funcitons
-```JS
+```javascript
 {
 	let internal = "";
 };
@@ -63,14 +63,14 @@ console.log(internal); // Will crash
 
 
 ### Default Parameter
-```JS
+```javascript
 function f (x, y = 7, z = 42) {
     return x + y + z
 }
 ```
 
 ### String Interpolation
-```JS
+```javascript
 const name = "Peter";
 var helloMessage = `Hello ${name},
 I hope you are doing good?
@@ -80,7 +80,7 @@ Warm Regards`;
 ### Shorthand Properties
 Set an object without having to define property names
 
-```JS
+```javascript
 var a = 'Hello';
 var b = 'World';
 // ES6 can do
@@ -90,7 +90,7 @@ var c = {a: a, b: b};
 ```
 
 So we can also...
-```JS
+```javascript
 let f = () => {
   var a = 1;
   var b = 2;
@@ -101,7 +101,7 @@ var {a,b} = f();
 ```
 
 Another sample of function in an object
-```JS
+```javascript
 var funcinator = {
 	stateOfTheArt(instead, of){
 
@@ -112,7 +112,7 @@ var funcinator = {
 };
 ```
 Dynamic Generated Property Names
-```JS
+```javascript
 var propertyNameSuffix = "test";
 var dynProp = {
 		["my-new" + propertyNameSuffix](){
@@ -122,7 +122,7 @@ var dynProp = {
 
 ## Maps
 Usage of a JS Hashmap
-```JS
+```javascript
 let m = new Map();
 m.set("Hell", "World");
 console.log(m.get("Hell"));
@@ -133,7 +133,7 @@ console.log(m.get("Hell"));
 ### CommonJS Modules
 CommonJS Modules are supported in Node.JS by default, but can also be used by using RequireJS, Browserify or [other Tools](https://web.archive.org/web/20120826205255/http://blog.brianbeck.com/post/10667967423/node-js-require-in-the-browser)
 
-```JS
+```javascript
 // foobar.js
 function foobar(){
         this.bar = function(){
@@ -143,7 +143,8 @@ function foobar(){
 // Expose variables / public variables
 exports.foobar = foobar;
 ```
-```JS
+
+```javascript
 //main.js
 var foobar = require('./foobar').foobar,
     myfoobar   = new foobar();
@@ -153,7 +154,7 @@ myfoobar.bar(); // 'Hello bar'
 
 ### ES6 Modules
 Was designed with influence of CommonJS and AMD modules.
-```JS
+```javascript
 // foobar.js
 export foobar = {
 	this.bar = function(){
@@ -161,31 +162,34 @@ export foobar = {
 	}
 }
 ```
-```JS
+```javascript
 // main.js
 import {foobar} from 'foobar';
 foobar.bar();
 ```
 
 Or as an alternative you could also 
-```JS
+```javascript
 // foobar.js
 export bar = function(){
 	console.log('Hello bar');
 }
 ```
-```JS
+```javascript
 // main.js
 import * as foobar from 'foobar';
 foobar.bar();
 ```
 
-To Include a ES6 Module in your HTML-File use `<script src="index.js" type="module"></script>`
+To Include a ES6 Module in your HTML-File use 
+```HTML
+<script src="index.js" type="module"></script>
+```
 
 ## Classes
 
 ## Class Sample
-```JS
+```javascript
 class CheatSheet{
 	constructor(lang, text){
 		this.lang = lang;
@@ -206,7 +210,7 @@ myCS.print();
 
 ## Promises
 ES6 Promise pattern, so there is no need anymore to use [q](https://github.com/kriskowal/q), but be aware of [no IE11 support](https://caniuse.com/#feat=promises)
-```JS
+```javascript
 function logAsync(text) {
     return new Promise(
         function (resolve, reject) {
