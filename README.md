@@ -204,29 +204,37 @@ To Include a ES6 Module in your HTML-File use
 ```
 
 ## Classes
+
 [ES6 Classes Browser Support](https://caniuse.com/#feat=es6-class)
-## Class Sample
+[Currently it is not possible](https://stackoverflow.com/questions/22156326/private-properties-in-javascript-es6-classes) to have private variables in a class.
+
+## Sample
 ```javascript
 class CheatSheet{
 	constructor(lang, text){
-		this.lang = lang;
+		this.lang = lang; // Declare Public Variable
 		this.text = text;
 	}
 	print(){
 		console.log(`# ${this.lang}
 			${this.text}`);
 	}
+	changeLanguage(l){
+		this.lang = l;
+	}
 }
 
 class PetersCheatSheet extends CheatSheet{
 
 }
-var myCS = new PetersCheatSheet("Golang", "Here will be some text for Go");
+var myCS = new PetersCheatSheet("JavaScript", "Here will be some text for JS");
 myCS.print();
 ```
 
 ## Promises
 ES6 Promise pattern, so there is no need anymore to use [q](https://github.com/kriskowal/q), but be aware of [no IE11 support](https://caniuse.com/#feat=promises)
+To have browser support for IE11 and older browsers make sure to [polyfill Promises](https://github.com/stefanpenner/es6-promise)
+
 ```javascript
 function logAsync(text) {
     return new Promise(
