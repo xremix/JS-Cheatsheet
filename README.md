@@ -33,6 +33,9 @@ References, useful and interesting links.
 
 ## ES6 Basics
 
+### Introduction
+To make sure your audience can use the code you still might want to use [Babel](https://babeljs.io) to transpile your modern JS.
+
 ### Let vs. Var vs. Const
 ```javascript
 var x; // Good old vars
@@ -70,6 +73,7 @@ function f (x, y = 7, z = 42) {
 ```
 
 ### String Interpolation
+[ES6 String Interpolation / Template Literals Browser Support](https://caniuse.com/#feat=template-literals)
 ```javascript
 const name = "Peter";
 var helloMessage = `Hello ${name},
@@ -187,7 +191,7 @@ To Include a ES6 Module in your HTML-File use
 ```
 
 ## Classes
-
+[ES6 Classes Browser Support](https://caniuse.com/#feat=es6-class)
 ## Class Sample
 ```javascript
 class CheatSheet{
