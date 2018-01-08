@@ -26,7 +26,7 @@ References, useful and interesting links.
 - [ES6 Features](http://es6-features.org/#Constants)
 - [New Features in ES8 and ES9](https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66)
 - [Modern JS Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) by mbeaudru
-- [ES6 Cheatsheet by DrkSephy](https://github.com/DrkSephy/es6-cheatsheet)
+- [ES6 Cheatsheet](https://github.com/DrkSephy/es6-cheatsheet) by DrkSephy
 
 **Interesting Links**
 - [Can I use](https://caniuse.com) - JS / CSS Browser Support
@@ -73,6 +73,16 @@ var eq = (para, parb) => para == parb;
 var eq = function(para, parb){
 	return para == parb;
 }
+```
+
+```javascript
+// Empty Arrow function
+()=>{
+}
+// translates to
+(function() {
+	
+});
 ```
 
 ### Blocks
