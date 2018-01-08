@@ -14,7 +14,7 @@ Summary of code snippets arround modern JS, ES6, etc., as well as a couple of in
 ### JavaScript Versions
 
 - **ES5** standardized in 2009, widely supported.
-- **ES6 / ECMAScript 2015** standardized in 2015. Most modern browsers support it
+- **ES6 / ECMAScript 2015** standardized in 2015. [Most modern browsers support it](http://kangax.github.io/compat-table/es6/)
 - **ES7 / ECMAScript 2016** is a smaller release from 2016. `Array.prototype.includes` will obsolete the old function `Array.prototype.contains`. There is also a new exponent operator (2^3 == `2 ** 3`)
 - **ES8 / ECMAScript 2017** includes features like String Padding, `Object.values` and `Object.entries`, **Async functions**, Trailing Commas**,**
 - **ES9** will mostly lift template literal restrictions
@@ -22,27 +22,34 @@ Summary of code snippets arround modern JS, ES6, etc., as well as a couple of in
 ### Resources
 References, useful and interesting links.
 
+**Resources**
 - [ES6 Features](http://es6-features.org/#Constants)
 - [New Features in ES8 and ES9](https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66)
-- [Modern JS Cheatshett by mbeaudru](https://github.com/mbeaudru/modern-js-cheatsheet)
+- [Modern JS Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) by mbeaudru
 - [ES6 Cheatsheet by DrkSephy](https://github.com/DrkSephy/es6-cheatsheet)
-- [30 Seconds of Code (Github)](https://github.com/Chalarangelo/30-seconds-of-code)
-- [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources)
+
+**Interesting Links**
+- [Can I use](https://caniuse.com) - JS / CSS Browser Support
+- [30 Seconds of Code](https://github.com/Chalarangelo/30-seconds-of-code) - JS Snippets explained in 30 seconds
+- [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources) - tons of Ressources (Conferences, Courses, Newsletter, etc.)
 - [You Don't Need jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
 - [Babel Online Transpiler](https://babeljs.io/repl/)
+
 
 ## ES6 Basics
 
 ### Introduction
 To make sure your audience can use the code you still might want to use [Babel](https://babeljs.io) to transpile your modern JS.
+Make sure to check your sites features with [Can I use](https://caniuse.com) and the [ES6 Compat Table](http://kangax.github.io/compat-table/es6/)
 
 ### Use Strict
-Was part of ES5, to tell the browser to run in `strict mode`.
-It is always block scoped. Declared of the beginning of a file it has a global scope. But it always needs to be declared at the beginning of a block / function / file.
+Was actually part of ES5, to tell the browser to run in `strict mode`.
+It is always block scoped, declared of the beginning of a file it has a global scope. But it always needs to be declared at the beginning of a block / function / file.
 
 - Helps to write *secure* JS
 - Prevents bad Syntax
 - You cannot use undeclared variables in strict mode for example.
+- ...
 
 ```javascript
 'use strict';
