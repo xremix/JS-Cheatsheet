@@ -26,7 +26,7 @@ References, useful and interesting links.
 - [ES6 Features](http://es6-features.org/#Constants)
 - [New Features in ES8 and ES9](https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66)
 - [Modern JS Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) by mbeaudru
-- [ES6 Cheatsheet](https://github.com/DrkSephy/es6-cheatsheet) by DrkSephy
+- [ES6 Cheatsheet by DrkSephy](https://github.com/DrkSephy/es6-cheatsheet)
 
 **Interesting Links**
 - [Can I use](https://caniuse.com) - JS / CSS Browser Support
@@ -75,18 +75,16 @@ var eq = function(para, parb){
 }
 ```
 
+Immediatly Invoked Arrow Function need to be put in brackets
+
 ```javascript
-// Empty Arrow function
-()=>{
-}
-// translates to
-(function() {
-	
-});
+(() => {
+  console.log('Do it now!');
+})()
 ```
 
 ### Blocks
-To replace immediatly invoked funcitons
+To replace immediatly invoked functions. *See also immediatly invoked arrow functions.*
 ```javascript
 {
 	let internal = "";
