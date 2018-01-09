@@ -276,3 +276,6 @@ logAsync("Log me async")
 .then(result => { console.log("Here we go")})
 .catch(error => { console.log("Something didn't work") });
 ```
+
+
+![Analytics](https://ga-beacon.appspot.com/UA-40522413-9/JS-Cheatsheet/readme?pixel)
