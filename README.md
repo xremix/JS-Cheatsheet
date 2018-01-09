@@ -5,8 +5,8 @@ Summary of code snippets arround modern JS, ES6, etc., as well as a couple of in
 - [Misc](#misc)
 - [ES6 Basics](#es6-basics)
 - [Maps](#maps)
-- [Modules](#modules)
 - [Classes](#classes)
+- [Modules](#modules)
 - [Promises](#promises)
 
 ## Misc
@@ -159,6 +159,33 @@ let m = new Map();
 m.set("Hell", "World");
 console.log(m.get("Hell"));
 ```
+## Classes
+
+[ES6 Classes Browser Support](https://caniuse.com/#feat=es6-class)
+[Currently it is not possible](https://stackoverflow.com/questions/22156326/private-properties-in-javascript-es6-classes) to have private variables in a class.
+
+### Sample
+```javascript
+class CheatSheet{
+	constructor(lang, text){
+		this.lang = lang; // Declare Public Variable
+		this.text = text;
+	}
+	print(){
+		console.log(`# ${this.lang}
+			${this.text}`);
+	}
+	changeLanguage(l){
+		this.lang = l;
+	}
+}
+
+class PetersCheatSheet extends CheatSheet{
+
+}
+var myCS = new PetersCheatSheet("JavaScript", "Here will be some text for JS");
+myCS.print();
+```
 
 ## Modules
 
@@ -186,27 +213,34 @@ myfoobar.bar(); // 'Hello bar'
 
 ### ES6 Modules
 Was designed with influence of CommonJS and AMD modules.
+
 ```javascript
-// foobar.js
-export foobar = {
-	this.bar = function(){
-		console.log('Hello bar');
-	}
+// Lib.js
+class Lib {
+	increase(n) {
+		console.log(n);
+        return ++n;
+    }
 }
+export default Lib;
 ```
+
 ```javascript
 // main.js
-import {foobar} from 'foobar';
-foobar.bar();
+import Lib from './Lib.js';
+var lib = new Lib();
+lib.increase(99);
 ```
 
 Or as an alternative you could also 
+
 ```javascript
 // foobar.js
 export bar = function(){
 	console.log('Hello bar');
 }
 ```
+
 ```javascript
 // main.js
 import * as foobar from 'foobar';
@@ -214,37 +248,11 @@ foobar.bar();
 ```
 
 To Include a ES6 Module in your HTML-File use 
+
 ```HTML
 <script src="index.js" type="module"></script>
 ```
 
-## Classes
-
-[ES6 Classes Browser Support](https://caniuse.com/#feat=es6-class)
-[Currently it is not possible](https://stackoverflow.com/questions/22156326/private-properties-in-javascript-es6-classes) to have private variables in a class.
-
-## Sample
-```javascript
-class CheatSheet{
-	constructor(lang, text){
-		this.lang = lang; // Declare Public Variable
-		this.text = text;
-	}
-	print(){
-		console.log(`# ${this.lang}
-			${this.text}`);
-	}
-	changeLanguage(l){
-		this.lang = l;
-	}
-}
-
-class PetersCheatSheet extends CheatSheet{
-
-}
-var myCS = new PetersCheatSheet("JavaScript", "Here will be some text for JS");
-myCS.print();
-```
 
 ## Promises
 ES6 Promise pattern, so there is no need anymore to use [q](https://github.com/kriskowal/q), but be aware of [no IE11 support](https://caniuse.com/#feat=promises)
