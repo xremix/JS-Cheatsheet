@@ -213,6 +213,7 @@ myfoobar.bar(); // 'Hello bar'
 
 ### ES6 Modules
 Was designed with influence of CommonJS and AMD modules.
+Check out the [full working sample](https://github.com/xremix/JS-Cheatsheet/tree/master/examples/es6modules)
 
 ```javascript
 // Lib.js
