@@ -29,6 +29,7 @@ References, useful and interesting links.
 - [ES6 Cheatsheet by DrkSephy](https://github.com/DrkSephy/es6-cheatsheet)
 
 **Interesting Links**
+- [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript) Tutorials, Frameworks, etc.
 - [Can I use](https://caniuse.com) - JS / CSS Browser Support
 - [30 Seconds of Code](https://github.com/Chalarangelo/30-seconds-of-code) - JS Snippets explained in 30 seconds
 - [Frontend Dev Resources](https://github.com/dmytroyarmak/frontend-dev-resources) - tons of Ressources (Conferences, Courses, Newsletter, etc.)
